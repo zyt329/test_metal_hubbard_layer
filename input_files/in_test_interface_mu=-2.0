@@ -1,0 +1,54 @@
+# ==========================
+# lattice dimension
+# ==========================
+
+ofile  = out_file_mu=-2.0 
+gfile  = interface_Hubbard.geom
+
+# ==========================
+# Holstein model
+# ==========================
+
+SimType = 0
+omega = 0.0
+
+# ==========================
+# Hubbard model
+# ==========================
+
+mu_up  =  2.0 
+mu_dn  =  2.0 
+L      = 50
+dtau   = 0.10
+HSF    = -1
+HSFtype = 0
+bcond  =  0.0, 0.0, 0.0
+delta1 = 4.0
+delta2 = 4.0
+
+# ==========================
+# Met's algorithm
+# ==========================
+
+nwarm  = 50000 
+npass  = 100000 
+ntry   = 1
+tausk  = 100
+tdm    = 0
+# ==========================
+# Measurements
+# ==========================
+
+nbin   = 10
+nhist  = 0
+seed   = 1234567
+
+# ==========================
+# numerical
+# ==========================
+
+north  = 8
+nwrap  = 8 
+fixwrap = 1
+errrate = 0.001
+difflim = 0.01
